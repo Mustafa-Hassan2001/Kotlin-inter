@@ -4,6 +4,15 @@ fun myFunction() {
 } 
 
 fun main() {
+    var userName: String = "Mustafa"
+    userName = "Raza"
+    var age : Int = 22
+  	println("Hello world")
+    println("Hello $userName your age is $age")
+    
+}
+
+fun main() {
   myFunction()
   myFunction()
   myFunction()
