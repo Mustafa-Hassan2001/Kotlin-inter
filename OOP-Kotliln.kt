@@ -36,5 +36,52 @@ fun main() {
   c1.year = 1969
 }
 
+class Car(var brand: String, var model: String, var year: Int)
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+}
+
+class Car(var brand: String, var model: String, var year: Int)
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+  val c2 = Car("BMW", "X5", 1999)
+  val c3 = Car("Tesla", "Model S", 2020)
+}
+class Car(var brand: String, var model: String, var year: Int) {
+  // Class function
+  fun drive() {
+    println("Wrooom!")
+  }
+}
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+  
+  // Call the function
+  c1.drive()
+}
+
+class Car(var brand: String, var model: String, var year: Int) {
+  // Class function
+  fun drive() {
+    println("Wrooom!")
+  }
+  
+  // Class function with parameters
+  fun speed(maxSpeed: Int) {
+    println("Max speed is: " + maxSpeed)
+  }
+}
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+  
+  // Call the functions
+  c1.drive()
+  c1.speed(200)
+}
+
   
 }
